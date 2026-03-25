@@ -6,16 +6,14 @@ if __name__ == "__main__":
 
 #object of the animal class instance of the animal class/ Intanciation the class
     animal1 = Animal("Gus", "Mouse")
-
-    animal3 = Cat("Kittens", "cat", "small")
-
+    animal2 = Cat("Kittens", "cat", "small")
     animal3 = Dog("Nala", "Canine", "medium")
 
     print(animal1)
     animal1.speak()
 
-    print(animal3)
-    animal3.speak()
+    print(animal2)
+    animal2.speak()
 
     print(animal3)
     animal3.speak()

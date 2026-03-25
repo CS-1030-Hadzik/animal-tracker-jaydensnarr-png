@@ -1,13 +1,9 @@
-from animal import Animal
-
 class Animal:
-    """
-    Base class representing a generic animal.
-    """
+    #class level parameter or attribute
     kingdom = "Animalia"
 
-    #object specific attributes
-    def __init__(self, name, species): # 
+    #object specific attributes contructor initializer
+    def __init__(self, name, species): 
         self.name = name
         self.species = species
 

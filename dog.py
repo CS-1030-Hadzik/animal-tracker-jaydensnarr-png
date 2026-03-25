@@ -11,16 +11,16 @@ class Dog(Animal):
     # __str___
 
     def __init__(self, name, species, size):
-        super().__init__(self, species)
+        super().__init__(name, species)
         self.size = size
 
-    def __init__(self):
+    def __str__(self):
         return super().__str__() + f"Size: {self.size}\n"
     
     def speak(self):
         print (f"{self.name} woofs!")
     
-    
+
     # TODO: Override the __str__ method to include the breed.
     # Example output:
     # Kingdom: 'kingdom attribute', Name: 'name attribute', Species: 'species attribute', Breed: 'breed attribute'
