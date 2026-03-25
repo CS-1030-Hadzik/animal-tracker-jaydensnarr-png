@@ -1,9 +1,25 @@
-class Dog:
+from animal import Animal
+
+class Dog(Animal):
     """
     Derived class representing a dog, which is a type of Animal.
     """
-    # TODO: Initialize the Dog class and add the breed attribute.
-    # The constructor should accept name, species, and breed as parameters.
+
+    # kingdom
+    # name species
+    # speak()
+    # __str___
+
+    def __init__(self, name, species, size):
+        super().__init__(self, species)
+        self.size = size
+
+    def __init__(self):
+        return super().__str__() + f"Size: {self.size}\n"
+    
+    def speak(self):
+        print (f"{self.name} woofs!")
+    
     
     # TODO: Override the __str__ method to include the breed.
     # Example output:

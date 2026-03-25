@@ -1,3 +1,5 @@
+from animal import Animal
+
 class Animal:
     """
     Base class representing a generic animal.
@@ -9,9 +11,11 @@ class Animal:
         self.name = name
         self.species = species
 
+#class method
     def speak(self):
-        print (f"{self.name} makes a noise")
+        print (f"{self.name} makes a noise\n")
 
+# magic methods changes how print(object) behaves override
     def __str__(self):
         return (f"Kingdom: {self.kingdom}\n"
                 f"Name: {self.name}\n"

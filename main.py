@@ -1,20 +1,24 @@
 from animal import Animal
-
+from dog import Dog
+from cat import Cat
 
 if __name__ == "__main__":
 
-    dog1 = Animal("Fido", "Canine")
-    dog2 = Animal("Nala", "Canine")
+#object of the animal class instance of the animal class/ Intanciation the class
+    animal1 = Animal("Gus", "Mouse")
 
-    print(dog1)
-    dog1.speak()
+    animal3 = Cat("Kittens", "cat", "small")
 
-    print(dog2)
-    dog2.speak()
+    animal3 = Dog("Nala", "Canine", "medium")
 
-    # TODO: Create an instance of the Animal class
-    # TODO: Print the Animal instance
-    # TODO: Call the method to make a generic animal sound
+    print(animal1)
+    animal1.speak()
+
+    print(animal3)
+    animal3.speak()
+
+    print(animal3)
+    animal3.speak()
 
     # TODO: Create an instance of the Dog class
     # TODO: Print the Dog instance
